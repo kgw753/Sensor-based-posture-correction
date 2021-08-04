@@ -1,4 +1,4 @@
-# Sensor Based Posture Correction
+# Sensor Based Posture Corrector
 
 오랜 시간 작업에 무의식중에 자세가 망가진 적이 있나요??
 안좋은 자세를 취하면 실시간으로 사용자에게 알려주는 자세 교정 보조 앱!!
