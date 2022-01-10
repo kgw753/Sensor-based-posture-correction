@@ -3,7 +3,7 @@ file_path = './tree_test.csv'
 
 df=pd.read_csv(file_path,header=0)
 
-df.columns=['datetime','acc_x','acc_y','acc_z','gyro_x','gyro_y','gyro_z','mag_x','mag_y','mag_z'
+df.columns=['acc_x','acc_y','acc_z','gyro_x','gyro_y','gyro_z','mag_x','mag_y','mag_z'
             ,'isCorrect','badType','user']
 
 df['acc_x']=df['acc_x'].astype('float')
