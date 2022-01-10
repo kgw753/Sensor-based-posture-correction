@@ -3,7 +3,7 @@ import seaborn as sns
 file_path ='./test_data.csv'
 
 df=pd.read_csv(file_path,header=0)
-df.columns=['datetime','acc_x','acc_y','acc_z','gyro_x','gyro_y','gyro_z','mag_x','mag_y','mag_z'
+df.columns=['acc_x','acc_y','acc_z','gyro_x','gyro_y','gyro_z','mag_x','mag_y','mag_z'
             ,'isCorrect','badType','user']
 
 df['acc_x']=df['acc_x'].astype('float')
@@ -37,7 +37,7 @@ X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.3,random_state=10
 
 from sklearn import svm
 svm_model =svm.SVC(kernel='rbf',C=10,gamma=10)
-svm_model.fit(X_train,y_train) #�� �н�
+svm_model.fit(X_train,y_train) #¸ðµ¨ ÇÐ½À
 y_hat=svm_model.predict(X_test)
 
 from sklearn import metrics
